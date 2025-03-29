@@ -316,7 +316,7 @@ Transform:
   m_GameObject: {fileID: 796858685}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.98, y: -0.21725507, z: 9.05}
+  m_LocalPosition: {x: 1.98, y: -0.57, z: 9.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.21725512
+      value: -0.272
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -466,6 +466,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Parcerito '
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6210c06b19fa0304aad8b225e0c90526, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -473,6 +481,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1180314631}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1180314632}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1180314635}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1180314636}
   m_SourcePrefab: {fileID: 100100000, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
 --- !u!1 &1180314630 stripped
 GameObject:
@@ -506,6 +523,69 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1180314632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180314630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 740e98e267b8e904d8e88b41f031e025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rotationSpeed: 450
+  anima: {fileID: 1180314633}
+--- !u!95 &1180314633 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
+  m_PrefabInstance: {fileID: 1180314629}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1180314635
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180314630}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3702037217650275473, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
+--- !u!65 &1180314636
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180314630}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.7795075, z: 1}
+  m_Center: {x: 0, y: 0.90077144, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
