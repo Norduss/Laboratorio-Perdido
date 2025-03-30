@@ -9,12 +9,12 @@ public class Movimiento : MonoBehaviour
     public float rotationSpeed = 100f;
     private Rigidbody rb;
 
-    public Animator anima;
+    public Animator Anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        anima = rb.GetComponent<Animator>();
+        Anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -30,11 +30,11 @@ public class Movimiento : MonoBehaviour
 
         if (VerticalInput > 0 || VerticalInput < 0)
         {
-            anima.SetFloat("Walk", Mathf.Abs(VerticalInput));
+            Anim.SetFloat("Walk", Mathf.Abs(VerticalInput));
         }
         else
         {
-            anima.SetFloat("Walk", 0);
+            Anim.SetFloat("Walk", 0);
         }
     }
 }
