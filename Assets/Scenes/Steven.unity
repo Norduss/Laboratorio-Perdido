@@ -385,8 +385,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1712148502986564766, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
-      insertIndex: -1
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
+      insertIndex: 1
       addedObject: {fileID: 963194228}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
@@ -399,11 +399,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1822100736}
   m_SourcePrefab: {fileID: 100100000, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
---- !u!4 &912671066 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1712148502986564766, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
-  m_PrefabInstance: {fileID: 891184879}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,12 +484,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.031877685, y: 0.020384267, z: 0.00065035763, w: 0.99928373}
-  m_LocalPosition: {x: 0.012997392, y: 0.0392671, z: 0.29466683}
+  m_LocalRotation: {x: -0.031877615, y: 0.020384265, z: 0.00065035897, w: 0.9992837}
+  m_LocalPosition: {x: 0.014, y: 1.529, z: 0.268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 912671066}
+  m_Father: {fileID: 1822100737}
   m_LocalEulerAnglesHint: {x: -3.654, y: 2.337, z: 0}
 --- !u!1 &1822100728 stripped
 GameObject:
@@ -571,6 +566,11 @@ MonoBehaviour:
   sensibilidadMouse: 1
   camara: {fileID: 963194228}
   anim: {fileID: 1822100731}
+--- !u!4 &1822100737 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1392ccf7fa691494693a834988cb713a, type: 3}
+  m_PrefabInstance: {fileID: 891184879}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
