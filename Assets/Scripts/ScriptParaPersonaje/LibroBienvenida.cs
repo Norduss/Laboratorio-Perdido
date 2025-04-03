@@ -19,7 +19,7 @@ public class LibroBienvenida : MonoBehaviour
 
     private IEnumerator DesactivarMensajeConRetraso()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3.5f);
         Mensaje.SetActive(false);
     }
 }
