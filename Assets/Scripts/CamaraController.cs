@@ -50,7 +50,7 @@ public class CamaraController : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * sensibilidadMouse;
 
         rotacionX -= mouseY;
-        rotacionX = Mathf.Clamp(rotacionX, -72f, 80f); // Limita la rotación de la cámara
+        rotacionX = Mathf.Clamp(rotacionX, -66f, 80f); // Limita la rotación de la cámara
 
         camara.localRotation = Quaternion.Euler(rotacionX, 0f, 0f);
         transform.Rotate(Vector3.up * mouseX);
