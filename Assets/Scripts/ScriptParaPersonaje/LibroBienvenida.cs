@@ -5,10 +5,11 @@ using UnityEngine;
 public class LibroBienvenida : MonoBehaviour
 {
     public GameObject Mensaje;
+    public GameObject libro;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("libroInicio"))
+        if (other.CompareTag("Player"))
         {
             Mensaje.SetActive(true);
 
@@ -21,5 +22,4 @@ public class LibroBienvenida : MonoBehaviour
         yield return new WaitForSeconds(5f);
         Mensaje.SetActive(false);
     }
-
 }
