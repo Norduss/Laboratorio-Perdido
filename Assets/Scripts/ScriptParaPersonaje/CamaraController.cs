@@ -13,6 +13,7 @@ public class CamaraController : MonoBehaviour
 
     private float rotacionX = 0f;
 
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked; // Oculta y bloquea el cursor al centro de la pantalla
@@ -44,8 +45,9 @@ public class CamaraController : MonoBehaviour
         transform.position += mover * velocidadActual * Time.deltaTime;
     }
 
-    void Rotacion()
+    public void Rotacion()
     {
+
         float mouseX = Input.GetAxis("Mouse X") * sensibilidadMouse;
         float mouseY = Input.GetAxis("Mouse Y") * sensibilidadMouse;
 
