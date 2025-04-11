@@ -22,7 +22,7 @@ public class InteraccionPuerta : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    SceneManager.LoadScene("Goldberg");
+                    SceneManager.LoadScene("Goldberg - Chantre");
                 }
             }
             else

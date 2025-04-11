@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Chantre.unity
     guid: 644e67d4f5b1fd940bfe9bdf5468c95f
   - enabled: 1
-    path: Assets/Scenes/Goldberg.unity
+    path: Assets/Scenes/Goldberg - Chantre.unity
     guid: 333fb67fb2566db42b3ad58f0a6c28cb
   m_configObjects: {}
