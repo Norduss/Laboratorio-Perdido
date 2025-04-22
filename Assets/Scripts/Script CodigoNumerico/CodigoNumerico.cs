@@ -11,6 +11,7 @@ public class CodigoNumerico : MonoBehaviour
     public GameObject canvasUI;
     public GameObject congratulation;
     public GameObject objetoINTECTACTUABLE;
+    public GameObject puertas;
 
     private string entradaJugador = "";
 
@@ -54,6 +55,7 @@ public class CodigoNumerico : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         Destroy(objetoINTECTACTUABLE);
+        Destroy(puertas);
         canvasUI.SetActive(false);
 
         Cursor.lockState = CursorLockMode.Locked;
