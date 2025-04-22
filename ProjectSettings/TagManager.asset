@@ -6,6 +6,8 @@ TagManager:
   tags:
   - libroInicio
   - Puerta
+  - PuertaSalida
+  - PuertasDobles
   layers:
   - Default
   - TransparentFX
