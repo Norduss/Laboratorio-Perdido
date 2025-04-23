@@ -15,6 +15,8 @@ public class CodigoNumerico : MonoBehaviour
 
     private string entradaJugador = "";
 
+    public static bool codigoCorrecto = false;
+
     public void BotonNumero(string numero)
     {
         if (entradaJugador.Length < 4)
@@ -37,6 +39,8 @@ public class CodigoNumerico : MonoBehaviour
             Debug.Log("¡Código correcto!");
             congratulation.SetActive(true);
             entradaTexto.gameObject.SetActive(false);
+
+            codigoCorrecto = true; // Activamos la bandera
 
             foreach (GameObject boton in botonesNumericos)
                 boton.SetActive(false);
