@@ -6,6 +6,7 @@ public class Spawner : MonoBehaviour
 {
     public GameObject prefabBola;
     public Transform[] puntosDeSpawn;
+    public Cinemachine.CinemachineVirtualCamera camaraSeguirBola;
     public float retrasoLanzamiento = 2f; // Tiempo para esperar antes de lanzar
 
     public void LanzarBola()
@@ -23,6 +24,9 @@ public class Spawner : MonoBehaviour
             Vector3 posicionElegida = puntosDeSpawn[indice].position;
 
             GameObject bola = Instantiate(prefabBola, posicionElegida, Quaternion.identity);
+            camaraSeguirBola.Follow = bola.transform;
+            camaraSeguirBola.LookAt = bola.transform;
+            
             GameGoldberg.instancia.RegistrarTirada();
             UIManager.instancia.MostrarBotonReintentar(false);
         }

@@ -8,7 +8,7 @@ public class Bola : MonoBehaviour
 
     void Start()
     {
-        Invoke("Finalizar", 5f); 
+        Invoke("Finalizar", 3f); 
     }
 
     void OnTriggerEnter(Collider other)
@@ -26,7 +26,6 @@ public class Bola : MonoBehaviour
         if (!yaTocoInterruptor)
         {
             GameGoldberg.instancia.TerminarTirada(false);
-            Destroy(gameObject);
         }
     }
 }
