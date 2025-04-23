@@ -2,21 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager instancia;
 
     public TextMeshProUGUI textoIntentos;
-    public GameObject botonReiniciar;
+    public GameObject botonReintentar;
 
     void Awake()
     {
         if (instancia == null) instancia = this;
         else Destroy(gameObject);
 
-        MostrarBotonReiniciar(false);
+        MostrarBotonReintentar(false);
     }
 
     public void ActualizarIntentos(int actuales, int maximos)
@@ -26,11 +25,14 @@ public class UIManager : MonoBehaviour
 
     public void MostrarMensajeFinal(bool gano)
     {
-        textoIntentos.text = gano ? "¡Puerta abierta!" : "Fallaste. Reinicia.";
+        textoIntentos.text = gano ? "¡Puerta abierta!" : "Fallaste las 3 tiradas.";
     }
 
-    public void MostrarBotonReiniciar(bool estado)
+    public void MostrarBotonReintentar(bool estado)
     {
-        botonReiniciar.SetActive(estado);
+        botonReintentar.SetActive(estado);
     }
 }
+
+
+

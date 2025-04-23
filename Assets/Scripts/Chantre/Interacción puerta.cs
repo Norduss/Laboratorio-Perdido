@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class InteraccionPuerta : MonoBehaviour
 {
-    public GameObject textoUI; // El texto de "Presiona E para interactuar"
+    public GameObject textoUI; 
 
     private void Update()
     {
         Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 3f)) // 3f = distancia de interacción
+        if (Physics.Raycast(ray, out hit, 3f)) 
         {
             if (hit.collider.CompareTag("Puerta"))
             {
@@ -27,12 +27,12 @@ public class InteraccionPuerta : MonoBehaviour
             }
             else
             {
-                textoUI.SetActive(false); // Ocultar si se está mirando otro objeto
+                textoUI.SetActive(false); 
             }
         }
         else
         {
-            textoUI.SetActive(false); // Ocultar si no se mira nada
+            textoUI.SetActive(false);
         }
     }
 }

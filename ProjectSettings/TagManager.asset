@@ -8,6 +8,8 @@ TagManager:
   - Puerta
   - PuertaSalida
   - PuertasDobles
+  - Bola
+  - Interruptor
   layers:
   - Default
   - TransparentFX

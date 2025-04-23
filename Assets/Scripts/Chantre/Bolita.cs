@@ -4,14 +4,32 @@ using UnityEngine;
 
 public class Bola : MonoBehaviour
 {
+    private bool yaTocoInterruptor = false;
+
     void Start()
     {
-        if (GameGoldberg.instancia != null)
-        {
-            GameGoldberg.instancia.RegistrarTirada();
-        }
+        Invoke("Finalizar", 5f); 
+    }
 
-        Destroy(gameObject, 10f); // para evitar que se acumulen
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Interruptor") && !yaTocoInterruptor)
+        {
+            yaTocoInterruptor = true;
+            GameGoldberg.instancia.TerminarTirada(true);
+            Destroy(gameObject);
+        }
+    }
+
+    void Finalizar()
+    {
+        if (!yaTocoInterruptor)
+        {
+            GameGoldberg.instancia.TerminarTirada(false);
+            Destroy(gameObject);
+        }
     }
 }
+
+
 

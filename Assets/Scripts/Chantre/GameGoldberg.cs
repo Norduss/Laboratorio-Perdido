@@ -11,43 +11,49 @@ public class GameGoldberg : MonoBehaviour
     public int intentosActuales = 0;
     private bool interruptorActivado = false;
 
-    void Awake()
+    private void Awake()
     {
-        if (instancia == null) instancia = this;
-        else Destroy(gameObject);
+        if (instancia == null)
+            instancia = this;
+        else
+            Destroy(gameObject);
     }
 
     public void RegistrarTirada()
     {
         intentosActuales++;
-
         UIManager.instancia.ActualizarIntentos(intentosActuales, intentosMaximos);
-
-        if (intentosActuales >= intentosMaximos && !interruptorActivado)
-        {
-            Debug.Log("Fallaste las 3 tiradas.");
-            UIManager.instancia.MostrarMensajeFinal(false);
-            UIManager.instancia.MostrarBotonReiniciar(true);
-        }
     }
 
-    public void ActivarInterruptor()
+    public void TerminarTirada(bool acerto)
     {
-        if (!interruptorActivado)
+        if (acerto)
         {
             interruptorActivado = true;
-            Debug.Log("¡Interruptor tocado! Puerta abierta");
             puerta.SetActive(false);
-
             UIManager.instancia.MostrarMensajeFinal(true);
-            UIManager.instancia.MostrarBotonReiniciar(true);
+            UIManager.instancia.MostrarBotonReintentar(false);
+        }
+        else
+        {
+            if (intentosActuales >= intentosMaximos)
+            {
+                UIManager.instancia.MostrarMensajeFinal(false);
+                UIManager.instancia.MostrarBotonReintentar(false);
+            }
+            else
+            {
+                UIManager.instancia.MostrarBotonReintentar(true);
+            }
         }
     }
 
-    public bool QuedanIntentos()
+    public bool PuedeLanzar()
     {
         return intentosActuales < intentosMaximos && !interruptorActivado;
     }
 }
+
+
 
 
