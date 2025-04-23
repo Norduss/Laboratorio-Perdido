@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Principal Scene.unity
+    guid: 096ca070ed9eb2f429ba3a03e1a85377
+  - enabled: 1
     path: Assets/Scenes/Chantre.unity
     guid: 644e67d4f5b1fd940bfe9bdf5468c95f
   - enabled: 1
     path: Assets/Scenes/Goldberg - Chantre.unity
     guid: 333fb67fb2566db42b3ad58f0a6c28cb
+  - enabled: 1
+    path: Assets/Scenes/Alejo - puzzle.unity
+    guid: c859fb341f182ce4cb11b27d174306d9
+  - enabled: 1
+    path: Assets/Scenes/Juego.unity
+    guid: 53ce8688bd079714baaa1a77a00cd293
   m_configObjects: {}
