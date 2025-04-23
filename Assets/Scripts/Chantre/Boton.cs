@@ -6,9 +6,17 @@ public class Spawner : MonoBehaviour
 {
     public GameObject prefabBola;
     public Transform[] puntosDeSpawn;
+    public float retrasoLanzamiento = 2f; // Tiempo para esperar antes de lanzar
 
     public void LanzarBola()
     {
+        StartCoroutine(EsperarYLanzar());
+    }
+
+    private IEnumerator EsperarYLanzar()
+    {
+        yield return new WaitForSeconds(retrasoLanzamiento);
+
         if (GameGoldberg.instancia.PuedeLanzar())
         {
             int indice = Random.Range(0, puntosDeSpawn.Length);
@@ -20,6 +28,7 @@ public class Spawner : MonoBehaviour
         }
     }
 }
+
 
 
 
