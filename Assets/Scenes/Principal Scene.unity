@@ -44237,7 +44237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60907dc8f85bcb44a38d81e8eae1d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contadorTiempo: 10
+  contadorTiempo: 300
   danioBomba: 100
   tiempoTexto: {fileID: 1781268669}
 --- !u!4 &814413410
@@ -49635,7 +49635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3578127198902683989, guid: 70e4c2647dc889b4d9e409707832c7d9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5095311041012847262, guid: 70e4c2647dc889b4d9e409707832c7d9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
