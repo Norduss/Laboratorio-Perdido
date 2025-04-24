@@ -7,7 +7,7 @@ public class EntradaRompecabezas : MonoBehaviour
 {
     public string puzzleSceneName = "Juego";
     public float interactionDistance = 3f;
-    public GameObject interactionPrompt; // Asigna aquí el Canvas (la letra "E") en el Inspector
+    public GameObject interactionPrompt; // Asignamos el canvas aquí y en el texto ponemos "E" para interactuar
 
     private Transform player;
 
@@ -32,6 +32,12 @@ public class EntradaRompecabezas : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
+                // Guardamos la posición actual del jugador
+                if (GameStateManager.Instance != null)
+                {
+                    GameStateManager.Instance.posicionJugador = player.position;
+                }
+
                 SceneManager.LoadScene(puzzleSceneName);
             }
         }
