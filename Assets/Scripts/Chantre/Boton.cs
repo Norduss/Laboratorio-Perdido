@@ -7,7 +7,7 @@ public class Spawner : MonoBehaviour
     public GameObject prefabBola;
     public Transform[] puntosDeSpawn;
     public Cinemachine.CinemachineVirtualCamera camaraSeguirBola;
-    public float retrasoLanzamiento = 2f; // Tiempo para esperar antes de lanzar
+    public float retrasoLanzamiento = 2f; 
 
     public void LanzarBola()
     {

@@ -20,7 +20,7 @@ public class GameGoldberg : MonoBehaviour
     public void RegistrarTirada()
     {
         intentosActuales++;
-        UIManager.instancia.ActualizarIntentos(intentosActuales); // Corregido: solo pasamos 1 argumento
+        UIManager.instancia.ActualizarIntentos(intentosActuales); 
     }
 
     public void TerminarTirada(bool acerto)
