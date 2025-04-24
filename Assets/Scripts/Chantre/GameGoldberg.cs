@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameGoldberg : MonoBehaviour
@@ -22,7 +20,7 @@ public class GameGoldberg : MonoBehaviour
     public void RegistrarTirada()
     {
         intentosActuales++;
-        UIManager.instancia.ActualizarIntentos(intentosActuales, intentosMaximos);
+        UIManager.instancia.ActualizarIntentos(intentosActuales); // Corregido: solo pasamos 1 argumento
     }
 
     public void TerminarTirada(bool acerto)
@@ -53,7 +51,3 @@ public class GameGoldberg : MonoBehaviour
         return intentosActuales < intentosMaximos && !interruptorActivado;
     }
 }
-
-
-
-

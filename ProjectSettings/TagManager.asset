@@ -10,6 +10,9 @@ TagManager:
   - PuertasDobles
   - Bola
   - Interruptor
+  - Spawn1
+  - Spawn2
+  - Spawn3
   layers:
   - Default
   - TransparentFX
