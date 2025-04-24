@@ -49609,6 +49609,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BotonNumero
       objectReference: {fileID: 0}
+    - target: {fileID: 1264759063910565332, guid: 70e4c2647dc889b4d9e409707832c7d9, type: 3}
+      propertyPath: m_Text
+      value: ("X"+ "X") + Y = ???
+      objectReference: {fileID: 0}
     - target: {fileID: 1890464281073898119, guid: 70e4c2647dc889b4d9e409707832c7d9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -49631,7 +49635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3578127198902683989, guid: 70e4c2647dc889b4d9e409707832c7d9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5095311041012847262, guid: 70e4c2647dc889b4d9e409707832c7d9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -49648,6 +49652,14 @@ PrefabInstance:
     - target: {fileID: 5561284189861463415, guid: 70e4c2647dc889b4d9e409707832c7d9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BotonClear
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798726153933520205, guid: 70e4c2647dc889b4d9e409707832c7d9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.786986
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798726153933520205, guid: 70e4c2647dc889b4d9e409707832c7d9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 306
       objectReference: {fileID: 0}
     - target: {fileID: 5972039028315626092, guid: 70e4c2647dc889b4d9e409707832c7d9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
